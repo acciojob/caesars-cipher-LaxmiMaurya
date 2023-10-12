@@ -39,7 +39,7 @@ function rot13(str) {
 			output += lookup[str[i]]
 		}
 		else{
-			output=+str[i];
+			output += str[i];
 		}
 	}
   // Only change code below this line
