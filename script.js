@@ -32,7 +32,7 @@ const lookup = {
 };
 
 function rot13(str) {
-	encodedStr=str.toUpperCase();
+	str=str.toUpperCase();
   let output = ""; // Your Result goes here
 	for(let i=0;i<str.length;i++){
 		if(lookup[str[i]]){
