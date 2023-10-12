@@ -31,11 +31,20 @@ const lookup = {
   ",": ",",
 };
 
-function rot13(encodedStr) {
-  let decodedArr = []; // Your Result goes here
+function rot13(str) {
+	encodedStr=str.toUpperCase();
+  let output = ""; // Your Result goes here
+	for(let i=0;i<str.length;i++){
+		if(lookup[str[i]]){
+			output += lookup[str[i]]
+		}
+		else{
+			output=+str[i];
+		}
+	}
   // Only change code below this line
 
-  return; //return decodedArr
+  return output; //return decodedArr
 }
 
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
